@@ -174,11 +174,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .task-list {
-    margin-right: 10px;
-  }
   .task-list:not(:last-child) {
+    margin-right: 3px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .task-list:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
@@ -403,11 +407,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .task-list {
-    margin-right: 10px;
-  }
   .task-list:not(:last-child) {
+    margin-right: 3px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .task-list:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
@@ -669,11 +677,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .task-list {
-    margin-right: 10px;
-  }
   .task-list:not(:last-child) {
+    margin-right: 3px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .task-list:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
@@ -970,11 +982,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .task-list {
-    margin-right: 10px;
-  }
   .task-list:not(:last-child) {
+    margin-right: 3px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .task-list:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
