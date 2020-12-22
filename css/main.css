@@ -174,9 +174,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .task-list {
+    margin-right: 10px;
+  }
   .task-list:not(:last-child) {
     margin-bottom: 0;
-    margin-right: 10px;
   }
 }
 
@@ -401,9 +403,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .task-list {
+    margin-right: 10px;
+  }
   .task-list:not(:last-child) {
     margin-bottom: 0;
-    margin-right: 10px;
   }
 }
 
@@ -665,9 +669,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .task-list {
+    margin-right: 10px;
+  }
   .task-list:not(:last-child) {
     margin-bottom: 0;
-    margin-right: 10px;
   }
 }
 
@@ -964,9 +970,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .task-list {
+    margin-right: 10px;
+  }
   .task-list:not(:last-child) {
     margin-bottom: 0;
-    margin-right: 10px;
   }
 }
 
