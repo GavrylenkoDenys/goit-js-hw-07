@@ -7,7 +7,10 @@
 
 const inputRef = document.getElementById("name-input");
 const inputResult = document.getElementById("name-output");
+let defaultValue = document.getElementById("name-output");
+defaultValue.textContent = "незнакомец";
 
 inputRef.addEventListener("input", (event) => {
-  inputResult.textContent = event.target.value;
+  inputResult.textContent =
+    inputRef.value === "" ? "незнакомец" : event.currentTarget.value;
 });
