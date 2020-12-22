@@ -170,13 +170,13 @@ body {
 }
 
 .task-list:not(:last-child) {
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .task-list:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
@@ -397,13 +397,13 @@ body {
 }
 
 .task-list:not(:last-child) {
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .task-list:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
@@ -661,13 +661,13 @@ body {
 }
 
 .task-list:not(:last-child) {
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .task-list:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
@@ -960,13 +960,13 @@ body {
 }
 
 .task-list:not(:last-child) {
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .task-list:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
