@@ -1,3 +1,5 @@
+// Напиши скрипт, который для каждого элемента массива ingredients создаст отдельный li, после чего вставит все li за одну операцию в список ul.ingredients. Для создания DOM-узлов используй document.createElement().
+
 const ingredients = [
   "Картошка",
   "Грибы",
@@ -6,22 +8,22 @@ const ingredients = [
   "Зелень",
   "Приправы",
 ];
-let item = [];
+const item = [];
 
-const ulIngredients = document.getElementById("ingredient");
-let categoryList = document.createElement("li");
-categoryList.classList.add("item");
-const itemList = document.querySelector("item");
-let heading = document.createElement("h2");
+const heading = document.createElement("h2");
+
+const ulEl = document.getElementById("ingredient");
+
 heading.classList.add("headings");
-heading.textContent = "Ингредиенты";
+heading.textContent = "Ингредиенты :";
 
-ulIngredients.classList.add("tasks");
-ingredients.map((ingredients) => {
-  let liItems = document.createElement("li");
-  liItems.classList.add("ingretients-tasks");
-  liItems.textContent = ingredients;
-  item.push(liItems);
+ulEl.classList.add("second-task");
+
+ingredients.map((ingredient) => {
+  const liItem = document.createElement("li");
+  liItem.classList.add("item");
+  liItem.classList.add("ingretients-tasks");
+  liItem.textContent = ingredient;
+  item.push(liItem);
 });
-ulIngredients.append(categoryList);
-categoryList.append(heading, ...item);
+ulEl.append(heading, ...item);

@@ -5,11 +5,9 @@
 // <span id="text">Абракадабра!</span>
 
 const inputValue = document.getElementById("font-size-control");
+
 const spanRef = document.getElementById("text");
 
-inputValue.addEventListener("input", onChange);
+const onChange = () => (spanRef.style.fontSize = `${inputValue.value}px`);
 
-function onChange() {
-  spanRef.style.fontSize = `${inputValue.value}rem`;
-}
-console.log(inputValue.value);
+inputValue.addEventListener("input", onChange);

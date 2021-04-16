@@ -18,10 +18,8 @@ const images = [
 
 const imgGallRef = document.getElementById("gallery");
 imgGallRef.classList.add("img-gallery");
-const createGal = ({ url, alt }) => {
-  return `<li class="images">
+const createGal = ({ url, alt }) => `<li class="images">
         <img class="img-link" src="${url}" alt="${alt}" width="360" height="200" />
       </li>`;
-};
 const makeHtml = images.map(createGal).join("");
 imgGallRef.insertAdjacentHTML("beforeend", makeHtml);

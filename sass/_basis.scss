@@ -18,6 +18,7 @@ body {
   font-family: "Arial";
   font-size: large;
   font-weight: bold;
+  background-color: #f0ffff;
 }
 .container {
   margin-left: auto;
@@ -64,18 +65,17 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: rgb(25, 177, 5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #19b105;
+  box-shadow: 0px 4px 4px #00000026;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: rgba(80, 230, 113, 0.514);
-    color: rgb(0, 26, 255);
+    background-color: #59ff7de8;
+    color: #001aff;
   }
 
   @media screen and (min-width: 1200px) {
@@ -89,18 +89,19 @@ body {
   font-weight: bolder;
 }
 .all-tasks {
-  background: linear-gradient(#ffffff 40%, #3340f7 60%);
+  background: linear-gradient(#fff 10%, #3341ff 60%);
   display: block;
   padding: 20px;
   text-align: center;
 
   justify-content: center;
-  border: 1px solid yellowgreen;
+  border: 1px solid #7fff29;
   border-radius: 25px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     padding: 50px 75px;
+    box-shadow: #0000ff 0 0 25px 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -109,12 +110,20 @@ body {
 }
 .tasks {
   justify-content: center;
-  border: 2px groove yellowgreen;
+  border: 2px groove #5dfd00;
   border-radius: 25px;
 
   @media screen and (min-width: 768px) {
     display: flex;
   }
+}
+.second-task {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  border: 2px groove #5dfd00;
+  border-radius: 25px;
 }
 .item {
   display: block;
@@ -127,9 +136,8 @@ body {
   border-radius: 25px;
   display: block;
   justify-content: center;
-  background-color: blueviolet;
 
-  color: #ffffff;
+  color: #fff;
   &:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -149,18 +157,17 @@ body {
 .task-links {
   display: block;
   padding: 5px 10px;
-  border-radius: 25px;
-  border: 1px solid transparent;
 
   color: black;
   &:hover,
   &:focus {
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: rgba(92, 105, 221, 0.514);
-    color: rgb(0, 26, 255);
+    transition: 200ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 50ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #14ff14ec;
+    border-radius: 25px;
+    color: #fff;
+    box-shadow: #fff 0 0 25px 0;
   }
 
   @media screen and (min-width: 480px) {
@@ -177,7 +184,9 @@ body {
     border-radius: 25px;
   }
 }
-
+.first {
+  background-color: #0044ff;
+}
 .ingretients-tasks {
   display: block;
   &:not(:last-child) {

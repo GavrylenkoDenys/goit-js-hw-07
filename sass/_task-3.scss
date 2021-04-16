@@ -1,27 +1,24 @@
-@import "./basis";
-
 .img-gallery {
   display: block;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 25px;
-    padding-left: 25px;
-    width: 768px;
-    margin: -20px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 15px;
   }
 }
 .images {
-  contain: content;
-  margin: 20px;
+  @media screen and(max-width: 1199.9px) {
+    margin: -10px;
+  }
 
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 6 * 20px) / 3);
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    width: calc((100% - 4 * 10px) / 2);
+    margin: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 5px;
   }
 }
