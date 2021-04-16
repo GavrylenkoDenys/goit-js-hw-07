@@ -10,7 +10,8 @@ class Counter {
     this.startCount = 0;
   }
   toDecrement() {
-    if (this.startCount === 0) return;
+    /*if (this.startCount ===) return; */ //теперь работает во всех направлениях
+
     this.startCount -= 1;
     counterValue.textContent = this.startCount;
   }
